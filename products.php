@@ -1,8 +1,8 @@
 <?php $args = array(
 	'posts_per_page'   => 5,
 	'offset'           => 0,
-	'category'         => '',
-	'category_name'    => 'products',
+	'category'         => '3',
+	'category_name'    => '',
 	'orderby'          => 'post_date',
 	'order'            => 'DESC',
 	'include'          => '',

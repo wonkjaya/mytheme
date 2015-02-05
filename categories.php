@@ -7,7 +7,7 @@
 						<?php 
 
 						$args = array(
-							'type'                     => 'post',
+							'type'                     => '',
 							'child_of'                 => 0,
 							'parent'                   => '',
 							'orderby'                  => 'name',

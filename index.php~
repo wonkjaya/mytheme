@@ -51,8 +51,8 @@ $posts = get_posts( $args );  //array
 		            <div class="image">
 		                <?php echo get_the_post_thumbnail( $p->ID, array(50,50), '' ); ?> 
 		            </div>
-		            <span><b><?= $p->post_title; ?></b></span><br />
-		            <?php echo substr(str_replace(array('<','>','</'),'',$p->post_content),0,30).'...'; ?>
+		            <span><b><?= $p->post_title; ?></b><br />
+		            <?php echo substr(str_replace(array('<','>','</'),'',$p->post_content),0,30).'...'; ?></span>
                     </div>
                  <?php
                   }
