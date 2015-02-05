@@ -12,8 +12,7 @@
 	float:left;
 }
 .left_bar_content span{
-	width:70%;
+	width:79%;
 	height:100%;
 	float:left;
-	margin-left:4%;
 }
