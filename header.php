@@ -16,9 +16,9 @@
 				<!-- Search Form -->
 	            <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
 	            	<div class="well">
-	                    <form action="">
+	                    <form action="<?= home_url( '/' ) ?>">
 	                        <div class="input-group">
-	                            <input type="text" class="form-control input-search" placeholder="Enter something to search" style="width:200%;">
+	                            <input type="text" class="form-control input-search" name="s" placeholder="Apa Yang Anda Cari ?" style="width:200%;">
 	                        </div>
 	                    </form>
 	                </div>

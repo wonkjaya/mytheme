@@ -64,7 +64,7 @@ $ikln = get_posts( $ikln );  //array
 		                    	<?php 
 		                    	foreach($ikln as $iklan){
 		                    	?>
-		                	<a href="<?=$iklan->post_content?>" class="link-p" style="overflow: hidden; position: relative;" target="_blank">
+		                	<a href="<?=$iklan->post_content?>" class="link-p" style="overflow: hidden; position: relative;">
 		                    	<?= get_the_post_thumbnail($iklan->ID); ?>
 		                	</a>
 		                	<?php } ?>

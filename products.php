@@ -1,3 +1,5 @@
+
+
 <?php $args = array(
 	'posts_per_page'   => 5,
 	'offset'           => 0,
@@ -20,7 +22,16 @@ $posts = get_posts( $args );  //array
 <!-- Featured -->
         	<div class="col-lg-9 col-md-9 col-sm-12">
         		<div class="col-lg-12 col-sm-12">
-            		<span class="title">SEMUA PRODUK</span>
+            		<span class="title">
+            		<?php
+			if ($_GET['s']){
+			 echo '<p>You searched for " '. esc_html( get_search_query( false ) ).' ". Here are the results:</p>';
+			}else{
+			 echo "SEMUA PRODUK";
+			}
+
+			?>
+            		</span>
             	</div>
             	<?php
             	//print_r($posts);
@@ -28,7 +39,7 @@ $posts = get_posts( $args );  //array
             	?>
 	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
 	                <div class="thumbnail">
-	                	<a href="detail.php" class="link-p" style="overflow: hidden; position: relative;">
+	                	<a href="<?= get_permalink($pst->ID) ?>" class="link-p" style="overflow: hidden; position: relative;">
 	                    	<?php echo get_the_post_thumbnail( $pst->ID, array(50,50), array("style"=>"position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;") ); ?>
 	                	</a>
 	                    <div class="caption prod-caption">

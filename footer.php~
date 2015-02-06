@@ -45,6 +45,9 @@
         		</div>
         	</div>
         </div>
+        <div class="navbar-inverse text-center copyright">
+        	Copyright © 2013 Mimity All right reserved
+        </div>
     </footer>
 
     <a href="#top" class="back-top text-center" onclick="$(&#39;body,html&#39;).animate({scrollTop:0},500); return false" style="display: inline;">
