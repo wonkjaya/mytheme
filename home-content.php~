@@ -64,7 +64,7 @@
         	<div class="clearfix visible-sm"></div>
 
 			<!-- Adidas Category -->
-        	<?php //get_template_part( 'promotions' ); ?>
+        	<?php get_template_part( 'promotions' ); ?>
 
         </div> <!-- row -->
 	</div> <!-- end container -->
