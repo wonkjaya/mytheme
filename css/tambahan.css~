@@ -17,3 +17,7 @@
 	float:left;
 	margin-left:4%;
 }
+.detail{
+float:left;
+width:40%;
+}
