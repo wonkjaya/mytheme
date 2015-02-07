@@ -26,16 +26,19 @@
                 <div class="row text-center">
                 <?php
                  foreach($posts as $p){
-                 //print_r($p);
+		         $id=$p->ID;
+		    	 $p_t=$p->post_title;
+		    	 $p_c=$p->post_content;
+		    	 $url=get_permalink($id).'&k='.str_replace(' ','-',$p_t);
                 ?>
                 
                     <div class="left_bar_content" style='text-align:left;'>
-		         <a href="<?= get_permalink($p->ID).'&artikel=true' ?>">   
+		         <a href="<?= $url ?>">   
 		            <div class="image">
-		                <?php echo get_the_post_thumbnail( $p->ID, array(50,50), '' ); ?> 
+		                <?php echo get_the_post_thumbnail( $id, array(50,50), '' ); ?> 
 		            </div>
-		            <span><b><?= $p->post_title; ?></b><br />
-		            <?php echo substr(str_replace(array('<','>','</'),'',$p->post_content),0,30).'...'; ?></span>
+		            <span><b><?= $p_t; ?></b><br />
+		            <?php echo substr(str_replace(array('<','>','</'),'',$p_c),0,30).'...'; ?></span>
 		         </a>
                     </div>
                  <?php

@@ -36,7 +36,7 @@ $posts = get_posts( $args );  //array
             	 $id=$pst->ID;
             	 $p_t=$pst->post_title;
             	 $p_c=$pst->post_content;
-            	 $url=get_permalink($id).'&k='.str_replace(' ','-',$p_c);
+            	 $url=get_permalink($id).'&k='.str_replace(' ','-',$p_t);
             	?>
 		 <tr>
 		  <td>
@@ -45,6 +45,7 @@ $posts = get_posts( $args );  //array
                 	</a>
 		  </td>
 		  <td>
+		  	<h1><a href="<?=$url?>"><?=ucfirst($p_t)?></a></h1>
 		  	<p style="font-size:20px;text-align:justify;text-indent:1em;"><?php echo ucfirst(substr($p_c,0,300)); if(strlen($p_c) > 200 ) echo " ...";?></p>
 		  	<span style="float:right;">
 		  	 <a href="<?=$url?>" class="btn btn-primary">More >></a>

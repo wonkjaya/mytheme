@@ -19,7 +19,7 @@ $post_content=$a->post_content;
 	                </div>
 	        </div>
 
-	        <div class='detail'>
+	        <div class='col-lg-5 col-sm-5 hero-feature text-center' style="text-align:left;">
 			<table class='table' style="float:left;">
 			 <tr>
 			  <td>Kode</td>

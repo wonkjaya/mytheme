@@ -45,7 +45,8 @@ $posts = get_posts( $args );  //array
                 	</a>
 		  </td>
 		  <td>
-		  	<p style="font-size:20px;text-align:justify;text-indent:1em;"><?php echo ucfirst(substr($p_c,0,300)); if(strlen($p_c) > 200 ) echo "...";?></p>
+		  	<h1><a href="<?=$url?>"><?=ucfirst($p_t)?></a></h1>
+		  	<p style="font-size:20px;text-align:justify;text-indent:1em;"><?php echo ucfirst(substr($p_c,0,300)); if(strlen($p_c) > 200 ) echo " ...";?></p>
 		  	<span style="float:right;">
 		  	 <a href="<?=$url?>" class="btn btn-primary">More >></a>
 		  	</span>
