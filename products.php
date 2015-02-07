@@ -43,12 +43,12 @@ $posts = get_posts( $args );  //array
 	                    	<?php echo get_the_post_thumbnail( $pst->ID, array(50,50), array("style"=>"position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -4px; top: 0px;") ); ?>
 	                	</a>
 	                    <div class="caption prod-caption">
-	                        <h4><a href="detail.php"><?= ucwords($pst->post_title)?></a></h4>
+	                        <h4><a href="<?= get_permalink($pst->ID) ?>"><?= ucwords($pst->post_title)?></a></h4>
 	                        <p><?= substr($pst->post_content,0,80) ?> ...</p>
 	                        <p>
 	                        	</p><div class="btn-group">
 		                        	<a href="#" class="btn btn-default">Call Us</a>
-		                        	<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Lihat Detail</a>
+		                        	<a href="<?= get_permalink($pst->ID) ?>" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Lihat Detail</a>
 	                        	</div>
 	                        <p></p>
 	                    </div>

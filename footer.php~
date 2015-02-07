@@ -15,10 +15,30 @@
         		<div class="column">
         			<h4>Categories</h4>
         			<ul>
-        				<li><a href="catalogue.php">Cras justo odio</a></li>
-        				<li><a href="catalogue.php">Dapibus ac facilisis in</a></li>
-        				<li><a href="catalogue.php">Morbi leo risus</a></li>
-        				<li><a href="catalogue.php">Porta ac consectetur ac</a></li>
+        			<?php 
+
+						$args = array(
+							'type'                     => '',
+							'child_of'                 => 0,
+							'parent'                   => '',
+							'orderby'                  => 'name',
+							'order'                    => 'ASC',
+							'hide_empty'               => 1,
+							'hierarchical'             => 1,
+							'exclude'                  => '',
+							'include'                  => '',
+							'number'                   => '',
+							'taxonomy'                 => 'category',
+							'pad_counts'               => false 
+
+						); 
+						$categories = get_categories( $args );
+						$i=0;
+						foreach($categories as $catg){
+							//print_r($cat);
+							echo '<li><a href="'.get_category_link( $catg->term_id ).'">'.$catg->cat_name.'</a></li>';
+						}
+						?>
         			</ul>
         		</div>
         	</div>
@@ -27,9 +47,9 @@
         			<h4>Customer Service</h4>
         			<ul>
         				<li><a href="contact.php">Contact Us</a></li>
-        				<li><a href="#">YM: erwin_heldy</a></li>
-        				<li><a href="#">Telp: 087825376xxx</a></li>
-        				<li><a href="#">Email: erwin.heldy@gmail.com</a></li>
+        				<li><a href="#">YM: rohman_ahmad</a></li>
+        				<li><a href="#">Telp: 083-835-53449</a></li>
+        				<li><a href="#">Email: cs@rezstore.com</a></li>
         			</ul>
         		</div>
         	</div>
@@ -51,10 +71,6 @@
     	<i class="fa fa-angle-double-up"></i>
     </a>
 
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.js"></script>
-    <script src="<?php //echo bloginfo('stylesheet_directory'); ?>/js/bootstrap.js"></script>
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.bxslider.min.js"></script>
-    <script src="<?php //echo bloginfo('stylesheet_directory'); ?>/js/jquery.blImageCenter.js"></script>
-    <script src="<?php //echo bloginfo('stylesheet_directory'); ?>/js/mimity.js"></script>
+    
 
 </body></html>

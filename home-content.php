@@ -30,7 +30,7 @@
                 ?>
                 
                     <div class="left_bar_content" style='text-align:left;'>
-		         <a href="<?= get_permalink($p->ID) ?>">   
+		         <a href="<?= get_permalink($p->ID).'&artikel=true' ?>">   
 		            <div class="image">
 		                <?php echo get_the_post_thumbnail( $p->ID, array(50,50), '' ); ?> 
 		            </div>

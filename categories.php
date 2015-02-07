@@ -24,8 +24,7 @@
 						$categories = get_categories( $args );
 						$i=0;
 						foreach($categories as $catg){
-							//print_r($cat);
-							echo '<a href="'.get_category_link( $catg->term_id ).'" class="list-group-item">'.$catg->cat_name.'</a>';
+							echo '<a href="'.get_category_link( $catg->term_id ).'" class="list-group-item">'.ucfirst($catg->cat_name).'</a>';
 						}
 						?>
 					</div>

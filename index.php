@@ -19,8 +19,12 @@
     	<?php 
     	if($_GET['s'] or !$_GET){
     		get_template_part( 'home-content' ); 
-    	}elseif ($_GET['p']){
+    	}elseif (is_numeric($_GET['p']) and !$_GET['artikel']){
     		get_template_part( 'product-content' ); 
+    	}elseif($_GET['p']=='artikel'){
+    		get_template_part( 'artikel-content' ); 
+    	}else{
+    		get_template_part( 'not_found' ); 
     	}
     	?>
 	

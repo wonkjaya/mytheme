@@ -19,9 +19,12 @@
     	<?php 
     	if($_GET['s'] or !$_GET){
     		get_template_part( 'home-content' ); 
-    	}elseif ($_GET['p']){
+    	}elseif (isnumeric($_GET['p']) and !$_GET['artikel']){
     		get_template_part( 'product-content' ); 
+    	}elseif($_GET['p']=='artikel'){
+    		get_template_part( 'artikel-content' ); 
+    	}else{
+    		get_template_part( 'not_found' ); 
     	}
-    	echo get_the_post_thumbnail(24);
     	?>
 	
