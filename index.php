@@ -23,7 +23,9 @@
     		get_template_part( 'product-content' ); 
     	}elseif($_GET['p']=='artikel'){
     		get_template_part( 'artikel-content' ); 
-    	}else{
+    	}elseif(is_numeric($_GET['p']) and isset($_GET['k'])){
+			get_template_part('artikel-content');
+		}else{
     		get_template_part( 'not_found' ); 
     	}
     	?>

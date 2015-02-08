@@ -71,6 +71,11 @@
     	<i class="fa fa-angle-double-up"></i>
     </a>
 
+	
+    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.js"></script>
+    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/bootstrap.js"></script>
+    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.blImageCenter.js"></script>
+    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/slider.js"></script>
     
 
 </body></html>
