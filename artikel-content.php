@@ -5,13 +5,19 @@
 
 			<?php get_template_part( 'categories' ); ?>
 
-			<?php get_template_part( 'best_seller'); ?>	
+			<?php get_template_part( 'ads'); ?>	
 
         	</div>
 
         	<div class="clearfix visible-sm"></div>
 
-			<?php get_template_part( 'artikel' ); ?>
+			<?php 
+			if ($_GET['k']!=''){
+				get_template_part( 'container-artikel' );
+			}else{
+				get_template_part( 'artikel' ); 
+			}
+			?>
 
         	<div class="clearfix visible-sm"></div>
 

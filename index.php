@@ -17,13 +17,19 @@
 	<?php get_template_part( 'navigations' ); ?>
 
     	<?php 
-    	if($_GET['s'] or !$_GET){
+    	if($_GET['s'] or !$_GET){  								//pencarian
+		
     		get_template_part( 'home-content' ); 
-    	}elseif (is_numeric($_GET['p']) and !$_GET['artikel']){
+			
+    	}elseif (is_numeric($_GET['p']) and !$_GET['artikel'] and !isset($_GET['k'])){	//produk
+		
     		get_template_part( 'product-content' ); 
-    	}elseif($_GET['p']=='artikel'){
+			
+    	}elseif($_GET['p']=='artikel'){							//artikel
+		
     		get_template_part( 'artikel-content' ); 
-    	}elseif(is_numeric($_GET['p']) and isset($_GET['k'])){
+			
+    	}elseif(is_numeric($_GET['p']) and isset($_GET['k'])){	//detail artikel
 			get_template_part('artikel-content');
 		}else{
     		get_template_part( 'not_found' ); 
