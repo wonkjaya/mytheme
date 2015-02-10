@@ -86,3 +86,11 @@ $ikln = get_posts( $ikln );  //array
 		            </div>
 			</div>
 		<!-- End Best Seller -->
+		<!-- Histats.com  START  (standard)-->
+<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+<a href="http://www.histats.com" target="_blank" title="hit counter script" ><script  type="text/javascript" >
+try {Histats.start(1,2932769,4,603,110,40,"00011111");
+Histats.track_hits();} catch(err){};
+</script></a>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?2932769&101" alt="hit counter script" border="0"></a></noscript>
+<!-- Histats.com  END  -->
