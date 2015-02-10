@@ -3,8 +3,13 @@
  $produk='';
  $blog='';
  $promo='';
- if($_GET['p']=='artikel'){
+ $g=$_GET['p'];
+ if($g=='produk'){
+  $produk='active';
+ }elseif($g=='artikel'){
   $blog='active';
+ }else{
+  $home='active';
  }
 ?>
 <!-- Navigation -->
