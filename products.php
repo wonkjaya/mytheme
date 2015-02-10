@@ -3,8 +3,8 @@
 <?php $args = array(
 	'posts_per_page'   => 5,
 	'offset'           => 0,
-	'category'         => '3',
-	'category_name'    => '',
+	'category'         => '3', //3 untuk produk
+	'category_name'    => 'produk',
 	'orderby'          => 'post_date',
 	'order'            => 'DESC',
 	'include'          => '',

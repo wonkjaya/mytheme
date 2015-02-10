@@ -29,8 +29,4 @@
                 </div>
             </div>
             <!-- End Slider -->
-            <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.js"></script>
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/bootstrap.js"></script>
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.bxslider.min.js"></script>
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.blImageCenter.js"></script>
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/slider.js"></script>

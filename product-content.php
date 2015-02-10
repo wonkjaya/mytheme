@@ -4,7 +4,7 @@
 
 			<?php get_template_part( 'categories' ); ?>
 
-			<?php get_template_part( 'best_seller'); ?>	
+			<?php get_template_part( 'ads'); ?>	
 
         	</div>
 

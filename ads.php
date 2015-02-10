@@ -44,14 +44,17 @@ $ikln = get_posts( $ikln );  //array
 					<div class="hero-feature">
 		                	<?php
 					 foreach($posts as $p){
-					 //print_r($p);
+					  $bst_sel_id=$p->ID;
+					  $bst_sel_title=$p->post_title;
+					  $bst_sel_content=$p->post_content;
+					  $bst_sel_url=$p->guid;
 					?>
 					    <div class="left_bar_content" style='text-align:left;'>
 						    <div class="image">
-							<?php echo get_the_post_thumbnail( $p->ID, array(50,50), '' ); ?> 
+							<?php echo get_the_post_thumbnail( $bst_sel_id, array(50,50), '' ); ?> 
 						    </div>
-						    <span><b><?= $p->post_title; ?></b><br />
-						    <?php echo substr(str_replace(array('<','>','</'),'',$p->post_content),0,30).'...'; ?></span>
+						    <span><b><a href="<?=$bst_sel_url?>"><?= $bst_sel_title; ?></a></b><br />
+						    <?php echo substr(str_replace(array('<','>','</'),'',$bst_sel_content),0,30).'...'; ?></span>
 					    </div>
 					 <?php
 					  }
@@ -64,7 +67,7 @@ $ikln = get_posts( $ikln );  //array
 		                    	<?php 
 		                    	foreach($ikln as $iklan){
 		                    	?>
-		                	<a href="<?=$iklan->post_content?>" class="link-p" style="overflow: hidden; position: relative;">
+		                	<a href="<?=$iklan->post_content?>" class="link-p" style="overflow: hidden; position: relative;" target="_blank">
 		                    	<?= get_the_post_thumbnail($iklan->ID); ?>
 		                	</a>
 		                	<?php } ?>

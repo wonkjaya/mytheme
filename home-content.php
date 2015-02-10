@@ -5,7 +5,7 @@
 		<?php $args = array(
 			'posts_per_page'   => 6,
 			'offset'           => 0,
-			'category'         => '1',
+			'category'         => '1', //untuk artikel
 			'category_name'    => '',
 			'orderby'          => 'post_date',
 			'order'            => 'DESC',
@@ -56,7 +56,7 @@
 
 			<?php get_template_part( 'categories' ); ?>
 
-			<?php get_template_part( 'best_seller'); ?>	
+			<?php get_template_part( 'ads'); ?>	
 
         	</div>
 
