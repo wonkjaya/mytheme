@@ -87,12 +87,17 @@ $ikln = get_posts( $ikln );  //array
 			</div>
 		<!-- End Best Seller -->
 		<!-- Histats.com  START  (standard)-->
-<!--script type="text/javascript">
-	document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));
-</script>
-<script  type="text/javascript" >
-try {Histats.start(1,2932769,4,603,110,40,"00011111");
-Histats.track_hits();} catch(err){};
-</script-->
+<div class='hide'>
+	<script type="text/javascript">
+		document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));
+	</script>
+	<script  type="text/javascript" >
+	try {Histats.start(1,2932769,4,603,110,40,"00011111");
+	Histats.track_hits();} catch(err){};
+	</script>
+	<!-- Histats.com  END  -->
+</div>
 
-<!-- Histats.com  END  -->
+<script>
+//$(".hide").hide();
+</script>
