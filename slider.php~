@@ -1,4 +1,3 @@
-    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.bxslider.min.js"></script>
 <!-- Slider -->
         	<div class="col-lg-9 col-md-12">
                 <div class="slider">
@@ -30,4 +29,4 @@
                 </div>
             </div>
             <!-- End Slider -->
-
+    <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.bxslider.min.js"></script>
