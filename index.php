@@ -1,8 +1,4 @@
-<?php
-parse_str(parse_url($_SERVER['HTTP_REFERER'], PHP_URL_QUERY), $queries);
-print_r($queries);
-exit;
-?>
+
 <!DOCTYPE html>
 <!-- saved from url=(0036) -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
