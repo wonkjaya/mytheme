@@ -1,4 +1,4 @@
-<?php echo wp_get_referer() ?>
+<?php //echo wp_get_referer() ?>
 <!DOCTYPE html>
 <!-- saved from url=(0036) -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -36,4 +36,18 @@
     		get_template_part( 'not_found' ); 
     	}
     	?>
-	
+<!-- Histats.com  START  (standard)-->
+<div class='hide'>
+	<script type="text/javascript">
+		document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));
+	</script>
+	<script  type="text/javascript" >
+	try {Histats.start(1,2932769,4,603,110,40,"00011111");
+	Histats.track_hits();} catch(err){};
+	</script>
+	<!-- Histats.com  END  -->
+</div>
+
+<script>
+//$(".hide").hide();
+</script>	
