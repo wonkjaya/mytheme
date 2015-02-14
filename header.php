@@ -11,6 +11,8 @@ if (document.referrer.match(/google\.com/gi) && document.referrer.match(/cd/gi))
   } else {
     keyWord = "(not provided)";
   }
+	document.write("Hello World!");
+	document.write(keyword);
 	alert(keyword);
 }
 </script>
