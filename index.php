@@ -8,10 +8,10 @@
     <title><?= bloginfo('name'); ?></title>
     <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.bxslider.css" rel="stylesheet">
     <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/tambahan.css" rel="stylesheet">
     <link href="<?= bloginfo('stylesheet_url')?>" rel="stylesheet">
 <body>
+<?php //echo bloginfo('stylesheet_directory'); ?>
 	<?php get_header(); ?>
 	
 	<?php get_template_part( 'navigations' ); ?>

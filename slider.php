@@ -1,3 +1,5 @@
+
+    <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.bxslider.css" rel="stylesheet">
 <!-- Slider -->
         	<div class="col-lg-9 col-md-12">
                 <div class="slider">
