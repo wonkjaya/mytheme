@@ -32,8 +32,7 @@
                     <li><a href="?p=artikel" class="<?=$blog?>">Blog Artikel</a></li>
                     <li><a href="checkout.php" class="<?=$promo?>">Promosi</a></li>
                     <li class="nav-dropdown">
-                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					Pages <span class="caret"></span>
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pages <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
 					<li><a href="about.php">About Us</a></li>
