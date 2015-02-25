@@ -10,4 +10,4 @@ $post = get_post($_GET['p']);  //array
 <h1><?=$title?></h1>
 Diposting Pada <span><?=$date?></span> Oleh <?=get_author_name($author)?>
 <hr>
-<p style='padding:6px;'><?=$content?></p>
+<div style='padding:6px;'><?=$content?></div>
