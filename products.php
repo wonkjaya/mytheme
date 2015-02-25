@@ -48,7 +48,7 @@ $posts = get_posts( $args );  //array
 	                        <p>
 	                        	</p><div class="btn-group">
 		                        	<a href="#" class="btn btn-default">Call Us</a>
-		                        	<a href="<?= get_permalink($pst->ID) ?>" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Lihat Detail</a>
+		                        	<a href="<?= get_permalink($pst->ID) ?>" class="btn btn-primary"> Lihat Detail</a>
 	                        	</div>
 	                        <p></p>
 	                    </div>
