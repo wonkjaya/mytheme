@@ -4,10 +4,10 @@
  $blog='';
  $promo='';
  $g=$_GET['p'];
- if(is_numeric($g)){
-  $produk='active';
- }elseif($g=='artikel'){
+ if(isset($g) and isset($_GET['k']) or $g=='artikel'){
   $blog='active';
+ }elseif(isset($g) and is_numeric($g)){
+  $produk='active';
  }else{
   $home='active';
  }
