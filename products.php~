@@ -37,6 +37,7 @@ $posts = get_posts( $args );  //array
             	//print_r($posts);
             	foreach($posts as $pst){
             	?>
+            	<?php $meta_values = get_post_meta( $pst->ID);print_r('ss'.$meta_values); ?>
 	            <div class="col-lg-4 col-sm-4 hero-feature text-center">
 	                <div class="thumbnail">
 	                	<a href="<?= get_permalink($pst->ID) ?>" class="link-p" style="overflow: hidden; position: relative;">
@@ -48,7 +49,7 @@ $posts = get_posts( $args );  //array
 	                        <p>
 	                        	</p><div class="btn-group">
 		                        	<a href="#" class="btn btn-default">Call Us</a>
-		                        	<a href="<?= the_url() ?>" class="btn btn-primary"> Lihat Detail</a>
+		                        	<a href="<?= get_permalink($pst->ID) ?>" class="btn btn-primary"> Lihat Detail</a>
 	                        	</div>
 	                        <p></p>
 	                    </div>

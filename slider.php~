@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+
     <link href="<?php echo bloginfo('stylesheet_directory'); ?>/css/jquery.bxslider.css" rel="stylesheet">
+=======
     <script src="<?php echo bloginfo('stylesheet_directory'); ?>/js/jquery.bxslider.min.js"></script>
+>>>>>>> 1c1802ccd2abc37785134f90ef4cb46e743213b0
 <!-- Slider -->
         	<div class="col-lg-9 col-md-12">
                 <div class="slider">

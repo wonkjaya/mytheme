@@ -1,6 +1,6 @@
 .left_bar_content{
 	width:97%;
-	height:40px;
+	min-height:40px;
 	color:#428bca;
 	margin-top:20px;
 }
