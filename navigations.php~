@@ -4,7 +4,7 @@
  $blog='';
  $promo='';
  $g=$_GET['p'];
- if(is_numeric($g)){
+ if($g=='produk'){
   $produk='active';
  }elseif($g=='artikel'){
   $blog='active';
